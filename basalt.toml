@@ -1,0 +1,20 @@
+[package]
+name = 'rho'
+slug = 'rho'
+version = '0.1.0'
+authors = ['']
+description = 'A code tracker'
+
+[run]
+dependencies = ['https://github.com/hyperupcall/bats-common-utils.git@v3.0.0']
+sourceDirs = ['pkg/src/commands', 'pkg/src/util']
+builtinDirs = []
+binDirs = ['pkg/bin']
+completionDirs = ['completions']
+manDirs = []
+
+[run.shellEnvironment]
+
+[run.setOptions]
+
+[run.shoptOptions]
