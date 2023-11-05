@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-eval "$(basalt-package-init)"; basalt.package-init
+eval "$(basalt-package-init)"
+basalt.package-init || exit
 basalt.package-load
 
-source "$BASALT_PACKAGE_DIR/pkg/src/cmd/rho.sh"
+source "$BASALT_PACKAGE_DIR/pkg/src/bin/rho.sh"
 rho.main "$@"

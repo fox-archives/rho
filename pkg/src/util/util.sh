@@ -5,9 +5,14 @@ util.show_help() {
 	rho [subcommand] [flags]
 
 	Flags:
-	-h, --help: Show help
+	  -h, --help: Show help
 
-	Subcommand:
+	Subcommands:
+	  shell-init
+	  cd
+	  fix
+	  list
+	  new
 	EOF
 }
 
